@@ -13,7 +13,9 @@ jobs:
   
     # runs-on: ubuntu-latest
     runs-on: ubuntu-22.04
-    
+
+    # below step requires adding Repository secrets in github repository setting
+    # setting > security > secrets and variables > repository secrets 
     steps:
       - uses: actions/checkout@v2
       - name: Build the Docker image
