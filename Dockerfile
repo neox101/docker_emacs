@@ -25,7 +25,7 @@ RUN apk add wget
 RUN apk add graphviz
 
 # TODO RUN apk add python3-pip
-apk add --no-cache python3 py3-pip
+RUN apk add --no-cache python3 py3-pip
 
 RUN apk add texlive-full
 
