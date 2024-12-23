@@ -23,7 +23,9 @@ RUN apk add git
 
 RUN apk add wget
 RUN apk add graphviz
-RUN apk add python3-pip
+
+# TODO RUN apk add python3-pip
+
 RUN apk add texlive-full
 
 RUN apk add emacs
