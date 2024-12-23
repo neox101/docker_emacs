@@ -30,7 +30,9 @@ RUN mkdir /root/.emacs.d/
 COPY init.el /root/.emacs.d/
 RUN ls /root/.emacs.d/
 COPY --chmod=777 entrypoint.sh /
-COPY publish.tar.gpg /root/
+
+# TODO add encrypted publish.tar.gpg in future
+# COPY publish.tar.gpg /root/ 
 
 ENTRYPOINT [ "/entrypoint.sh" ]
 CMD [ "emacs" ]
